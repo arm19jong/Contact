@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/yo"
+        android:scaleType="centerCrop"
+
+
+        />
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Yo Sarandar Mild"
+        android:textSize="32sp"
+        android:layout_below="@id/contact_image"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_marginTop="-70dp"
+        android:layout_centerHorizontal="true"
+        android:background="#99000000"
+
+        android:gravity="center_horizontal|center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contact_image"
+        android:layout_margin="16dp"
+        >
+        <ImageView
+            android:id="@+id/contact_pic_call"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_phone_black_48dp"
+            android:layout_margin="8dp"
+
+            />
+        <TextView
+            android:id="@+id/contact_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08123456789"
+            android:textSize="28sp"
+            android:layout_toRightOf="@id/contact_pic_call"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/contact_pic_email"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_email_black_48dp"
+            android:layout_margin="8dp"
+            android:layout_below="@id/contact_pic_call"
+
+            />
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="samplema.@mail.com"
+            android:textSize="28sp"
+            android:layout_toRightOf="@id/contact_pic_email"
+            android:layout_below="@id/contact_pic_call"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
